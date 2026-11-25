@@ -1,0 +1,397 @@
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f7fa;
+    color: #333;
+    min-height: 100vh;
+    padding: 25px 15px;
+}
+
+
+/* BOTÓN REGRESAR */
+
+.boton-inicio {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #087e9b;
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.boton-inicio:hover {
+    background: #e0f4f7;
+    color: #005a8b;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.perfil-container {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.10);
+}
+
+
+/* ENCABEZADO */
+
+.perfil-header {
+    background: linear-gradient(
+        45deg,
+        rgb(0, 90, 139),
+        rgb(0, 192, 204)
+    );
+
+    text-align: center;
+    padding: 45px 20px 35px;
+    color: white;
+}
+
+.foto-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    border: 5px solid rgba(255,255,255,0.8);
+    border-radius: 50%;
+    overflow: hidden;
+    background: white;
+}
+
+.foto-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-header h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.correo {
+    font-size: 14px;
+    margin-bottom: 12px;
+    opacity: 0.9;
+}
+
+.fecha-registro {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+
+/* CUERPO DEL PERFIL */
+
+.perfil-body {
+    padding: 30px;
+}
+
+.seccion {
+    margin-bottom: 35px;
+}
+
+.seccion h2 {
+    font-size: 19px;
+    color: #087e9b;
+    margin-bottom: 18px;
+}
+
+.seccion h2 i {
+    margin-right: 8px;
+}
+
+
+/* LOGROS */
+
+.logros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.logro-card {
+    padding: 22px 10px;
+    text-align: center;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.logro-card:hover {
+    transform: translateY(-4px);
+}
+
+.racha-card {
+    background: #fff4e8;
+}
+
+.experiencia-card {
+    background: #eaf7ff;
+}
+
+.icono-logro {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.racha-card .icono-logro {
+    color: #f08b26;
+}
+
+.experiencia-card .icono-logro {
+    color: #258ac4;
+}
+
+.logro-card h3 {
+    font-size: 27px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.logro-card p {
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* RACHA ACTUAL */
+
+.racha-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 22px;
+    border-radius: 14px;
+    background: linear-gradient(
+        100deg,
+        #fff1dc,
+        #fff8ec
+    );
+    border-left: 5px solid #f39832;
+}
+
+.racha-numero {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 38px;
+    font-weight: bold;
+    color: #e98520;
+}
+
+.racha-numero i {
+    font-size: 35px;
+}
+
+.racha-texto h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #6c451d;
+}
+
+.racha-texto p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #92734d;
+}
+
+
+/* RECOMPENSAS */
+
+.recompensas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.recompensa-card {
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.recompensa-card:hover {
+    transform: translateY(-4px);
+}
+
+.monedas {
+    background: #fff8df;
+}
+
+.vidas {
+    background: #fff0f1;
+}
+
+.recompensa-card i {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.monedas i {
+    color: #e6ac21;
+}
+
+.vidas i {
+    color: #e85c6b;
+}
+
+.recompensa-card h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.recompensa-card p {
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* INFORMACIÓN DEL CURSO */
+
+.curso-container {
+    background: #f5f9fb;
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+.curso-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 5px;
+}
+
+.curso-item + .curso-item {
+    border-top: 1px solid #e3e9ed;
+}
+
+.curso-item > i {
+    font-size: 24px;
+    color: #078ba5;
+    width: 30px;
+    text-align: center;
+}
+
+.curso-item span {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.curso-item h3 {
+    font-size: 15px;
+    color: #333;
+}
+
+
+/* PIE DE PÁGINA */
+
+.perfil-footer {
+    text-align: center;
+    padding: 25px 10px 5px;
+    border-top: 1px solid #eee;
+}
+
+.perfil-footer p {
+    color: #087e9b;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.perfil-footer i {
+    color: #e85c6b;
+}
+
+.perfil-footer small {
+    color: #999;
+    font-size: 12px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .perfil-body {
+        padding: 22px 16px;
+    }
+
+    .perfil-header {
+        padding: 35px 15px 28px;
+    }
+
+    .perfil-header h1 {
+        font-size: 22px;
+    }
+
+    .seccion h2 {
+        font-size: 17px;
+    }
+
+    .logros-grid,
+    .recompensas-grid {
+        gap: 10px;
+    }
+
+    .racha-container {
+        gap: 12px;
+        padding: 17px 12px;
+    }
+
+    .racha-numero {
+        font-size: 30px;
+    }
+
+    .racha-numero i {
+        font-size: 27px;
+    }
+
+    .racha-texto h3 {
+        font-size: 14px;
+    }
+
+    .racha-texto p {
+        font-size: 12px;
+    }
+
+}
+.barra-progreso {
+    width: 220px;
+    max-width: 100%;
+    height: 12px;
+    margin-top: 10px;
+    background: #dce9ed;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.barra-relleno {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #087e9b, #00c0cc);
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Perfil | Aprende Otomí</title>
+
+    <link rel="stylesheet" href="perfil.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<a href="index.html" class="boton-inicio">
+    <i class="fa-solid fa-house"></i>
+    Volver al inicio
+</a>
+
+<main class="perfil-container">
+
+    <section class="perfil-header">
+
+        <div class="foto-container">
+            <img src="imagenes/perfil.jpg" alt="Foto de perfil">
+        </div>
+
+        <h1 id="nombreUsuario">Cargando...</h1>
+
+        <p class="correo" id="correoUsuario">Cargando...</p>
+
+        <p class="fecha-registro">
+            <i class="fa-regular fa-calendar"></i>
+            Se unió el:
+            <span id="fechaRegistro">--</span>
+        </p>
+
+    </section>
+
+    <section class="perfil-body">
+
+        <!-- INFORMACIÓN PERSONAL -->
+        <div class="seccion">
+
+            <h2><i class="fa-solid fa-user"></i> Información personal</h2>
+
+            <div class="curso-container">
+
+                <div class="curso-item">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <div>
+                        <span>Fecha de nacimiento</span>
+                        <h3 id="fechaNacimiento">--</h3>
+                    </div>
+                </div>
+
+                <div class="curso-item">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <div>
+                        <span>País</span>
+                        <h3 id="paisUsuario">--</h3>
+                    </div>
+                </div>
+
+                <div class="curso-item">
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <div>
+                        <span>Nivel</span>
+                        <h3 id="nivelUsuario">--</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- LOGROS -->
+        <div class="seccion">
+
+            <h2><i class="fa-solid fa-trophy"></i> Mis logros</h2>
+
+            <div class="logros-grid">
+
+                <div class="logro-card racha-card">
+                    <div class="icono-logro">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h3 id="diasRacha">0</h3>
+                    <p>Días de racha</p>
+                </div>
+
+                <div class="logro-card experiencia-card">
+                    <div class="icono-logro">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 id="experiencias">0</h3>
+                    <p>Experiencias totales</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- RACHA -->
+        <div class="seccion">
+
+            <h2><i class="fa-solid fa-fire"></i> Mi racha actual</h2>
+
+            <div class="racha-container">
+
+                <div class="racha-numero">
+                    <i class="fa-solid fa-fire"></i>
+                    <span id="rachaActual">0</span>
+                </div>
+
+                <div class="racha-texto">
+                    <h3>¡Sigue aprendiendo!</h3>
+                    <p>Practica otomí todos los días para mantener tu racha.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- RECOMPENSAS -->
+        <div class="seccion">
+
+            <h2><i class="fa-solid fa-gift"></i> Mis recompensas</h2>
+
+            <div class="recompensas-grid">
+
+                <div class="recompensa-card monedas">
+                    <i class="fa-solid fa-coins"></i>
+                    <h3 id="monedas">0</h3>
+                    <p>Monedas</p>
+                </div>
+
+                <div class="recompensa-card vidas">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3 id="vidas">5</h3>
+                    <p>Vidas disponibles</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CURSO -->
+        <div class="seccion">
+
+            <h2><i class="fa-solid fa-book-open"></i> Mi curso</h2>
+
+            <div class="curso-container">
+
+                <div class="curso-item">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <span>Número de curso</span>
+                        <h3 id="numeroCurso">--</h3>
+                    </div>
+                </div>
+
+                <div class="curso-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <div>
+                        <span>Progreso del curso</span>
+                        <h3 id="porcentaje">0%</h3>
+                        <div class="barra-progreso">
+                            <div class="barra-relleno" id="barraProgreso"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="curso-item">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <div>
+                        <span>Fecha de ingreso</span>
+                        <h3 id="fechaIngreso">--</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="perfil-footer">
+            <p>Aprende Otomí <i class="fa-solid fa-heart"></i></p>
+            <small>Aprende, practica y conserva tu lengua.</small>
+        </footer>
+
+    </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>

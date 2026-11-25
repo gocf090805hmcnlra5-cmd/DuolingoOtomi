@@ -1,0 +1,71 @@
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Sección de juegos */
+#juegos {
+    background-color: #f3ebc7;
+    color: white;
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Título */
+#juegos h3 {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #333;
+    text-align: center;
+}
+
+/* Tarjetas */
+.card {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Imágenes */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Efecto al pasar el mouse */
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        height: 220px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    #juegos h3 {
+        font-size: 24px;
+    }
+}

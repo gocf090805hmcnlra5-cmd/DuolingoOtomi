@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Aprende Otomí - Login</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+
+    <style>
+        .gradient-custom-2 {
+            background: #fccb90;
+            background: -webkit-linear-gradient(
+                to right, #ee7724, #d8363a, #dd3675, #b44593
+            );
+            background: linear-gradient(
+                to right, #ee7724, #d8363a, #dd3675, #b44593
+            );
+        }
+
+
+        @media (min-width: 768px) {
+            .gradient-form {
+                height: 100vh !important;
+            }
+        }
+
+
+        @media (min-width: 769px) {
+            .gradient-custom-2 {
+                border-top-right-radius: .3rem;
+                border-bottom-right-radius: .3rem;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+<section class="h-100 gradient-form" style="background-color: #eee;">
+
+
+    <div class="container py-5 h-100">
+
+
+        <div class="row d-flex justify-content-center align-items-center h-100">
+
+
+            <div class="col-xl-10">
+
+
+                <div class="card rounded-3 text-black">
+
+
+                    <div class="row g-0">
+
+
+                        <!-- FORMULARIO DE LOGIN -->
+                        <div class="col-lg-6">
+
+
+                            <div class="card-body p-md-5 mx-md-4">
+
+
+                                <div class="text-center">
+
+
+                                    <img
+                                        src="https://images.vexels.com/media/users/3/201609/isolated/preview/c2b2fc9c87b1b41d24fd37f9e43553aa-otomi-style-flower-ornament.png"
+                                        style="width: 185px;"
+                                        alt="logo">
+
+
+                                    <h4 class="mt-1 mb-5 pb-1">
+                                        Aprende Otomí
+                                    </h4>
+
+
+                                </div>
+
+
+                                <!-- CONEXIÓN CON PHP -->
+                                <form id="loginForm"
+                                      action="login.php"
+                                      method="POST">
+
+
+                                    <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+
+
+                                        <p class="lead fw-normal mb-0 me-3">
+                                            Iniciar sesión con
+                                        </p>
+
+
+                                        <button type="button"
+                                                class="btn btn-primary mx-1">
+                                            f
+                                        </button>
+
+
+                                        <button type="button"
+                                                class="btn btn-primary mx-1">
+                                            t
+                                        </button>
+
+
+                                        <button type="button"
+                                                class="btn btn-primary mx-1">
+                                            in
+                                        </button>
+
+
+                                    </div>
+
+
+                                    <div class="divider d-flex align-items-center my-4">
+                                        <p class="text-center fw-bold mx-3 mb-0">
+                                            O
+                                        </p>
+                                    </div>
+
+
+                                    <!-- CORREO ELECTRÓNICO -->
+                                    <div class="form-outline mb-4">
+
+
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            class="form-control form-control-lg"
+                                            placeholder="Ingresa un email válido"
+                                            required>
+
+
+                                        <label class="form-label" for="email">
+                                            Email
+                                        </label>
+
+
+                                    </div>
+
+
+                                    <!-- CONTRASEÑA -->
+                                    <div class="form-outline mb-3">
+
+
+                                        <input
+                                            type="password"
+                                            name="contraseña"
+                                            id="contraseña"
+                                            class="form-control form-control-lg"
+                                            placeholder="Ingresa tu contraseña"
+                                            required>
+
+
+                                        <label class="form-label" for="contrasena">
+                                            Contraseña
+                                        </label>
+
+
+                                    </div>
+
+
+                                    <!-- RECORDAR USUARIO -->
+                                    <div class="d-flex justify-content-between align-items-center">
+
+
+                                        <div class="form-check mb-0">
+
+
+                                            <input
+                                                class="form-check-input me-2"
+                                                type="checkbox"
+                                                id="recordar">
+
+
+                                            <label class="form-check-label" for="recordar">
+                                                Recuérdame
+                                            </label>
+
+
+                                        </div>
+
+
+                                        <a href="#" class="text-body">
+                                            ¿Olvidó su contraseña?
+                                        </a>
+
+
+                                    </div>
+
+
+                                    <!-- BOTÓN LOGIN -->
+                                    <div class="text-center text-lg-start mt-4 pt-2">
+
+
+                                        <button
+                                            type="submit"
+                                            class="btn btn-primary btn-lg"
+                                            style="padding-left: 2.5rem; padding-right: 2.5rem;">
+
+
+                                            Login
+
+
+                                        </button>
+
+
+                                        <p class="small fw-bold mt-2 pt-1 mb-0">
+                                            ¿No tiene cuenta?
+
+
+                                            <a href="#" class="link-danger">
+                                                Registro
+                                            </a>
+                                        </p>
+
+
+                                    </div>
+
+
+                                </form>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- PANEL DERECHO -->
+                        <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+
+
+                            <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+
+
+                                <h4 class="mb-4">
+                                    Aprende Otomí
+                                </h4>
+
+
+                                <p class="small mb-0">
+                                    Aprende una nueva lengua, descubre
+                                    nuestra cultura y disfruta de las
+                                    actividades de Aprende Otomí.
+                                </p>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+</body>
+</html>
